@@ -1,0 +1,7 @@
+$('.modal-body').html("<%= j render 'form', task: @task %>");
+$('.modal').modal();
+//To separate important tasks
+  $('#important').click(function(){
+  $(this).closest("#task-name").addClass("red")
+
+});
